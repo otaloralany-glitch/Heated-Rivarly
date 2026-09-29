@@ -1,0 +1,176 @@
+/* ================================================= */
+/* RESET: Elimina estilos por defecto del navegador */
+/* ================================================= */
+* {
+margin: 0; /* Elimina márgenes externos por defecto */
+padding: 0; /* Elimina relleno interno por defecto */
+box-sizing: border-box; /* El borde NO suma al ancho total */
+}
+/* Base del documento */
+body {
+font-family: 'Arial', sans-serif; /* Fuente principal de toda la web
+*/
+font-size: 16px; /* Tamaño base del texto */
+line-height: 1.6; /* Interlineado: 1.6 veces el tamaño
+*/
+color: #333333; /* Color de texto: gris oscuro */
+background-color: #f0f2f5; /* Fondo general: gris muy claro */
+}/* ================================================= */
+/* ENCABEZADO PRINCIPAL — centrado y colorido */
+/* ================================================= */
+.encabezado {
+background-color: #ffafef; /* Fondo azul oscuro */
+color: #ffffff; /* Texto blanco */
+text-align: center; /* CENTRA todo el texto del encabezado */
+padding: 50px 20px; /* 50px arriba/abajo, 20px izq/der */
+box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Sombra debajo del header */
+}
+.titulo-principal {
+font-size: 2.8em; /* 2.8 veces el tamaño base = ~45px */
+font-weight: bold; /* Negrita */
+letter-spacing: 4px; /* Espacio entre letras para impacto */
+text-transform: uppercase; /* Convierte a MAYÚSCULAS */
+margin-bottom: 10px; /* Espacio debajo del título */
+text-shadow: 2px 2px 8px rgba(0,0,0,0.4); /* Sombra en el texto */
+}
+.subtitulo {
+font-size: 1.1em; /* Ligeramente más grande que el texto
+base */
+color: #fcfcff; /* Azul claro para el subtítulo */
+font-style: italic; /* Cursiva para el subtítulo */
+}
+/* ================================================= */
+/* ENCABEZADO PRINCIPAL — centrado y colorido */
+/* ================================================= */
+.encabezado {
+background-color: #f2a0eb; /* Fondo azul oscuro */
+color: #ffffff; /* Texto blanco */
+text-align: center; /* CENTRA todo el texto del encabezado */
+padding: 50px 20px; /* 50px arriba/abajo, 20px izq/der */
+box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Sombra debajo del header */
+}
+.titulo-principal {
+font-size: 2.8em; /* 2.8 veces el tamaño base = ~45px */
+font-weight: bold; /* Negrita */
+letter-spacing: 4px; /* Espacio entre letras para impacto */
+text-transform: uppercase; /* Convierte a MAYÚSCULAS */
+margin-bottom: 10px; /* Espacio debajo del título */
+text-shadow: 2px 2px 8px rgba(0,0,0,0.4); /* Sombra en el texto */
+}
+.subtitulo {
+font-size: 1.1em; /* Ligeramente más grande que el texto
+base */
+color: #fafbfd; /* Azul claro para el subtítulo */
+font-style: italic; /* Cursiva para el subtítulo */
+}
+/* ================================================= */
+/* MENÚ DE NAVEGACIÓN — alineado a la izquierda */
+/* ================================================= */
+.menu-navegacion {
+background-color: #96ccfc; /* Fondo azul medio */
+padding: 0; /* Sin relleno extra */
+}
+.menu-navegacion ul {
+list-style: none; /* Elimina los puntos de la lista */
+
+display: flex; /* Activa Flexbox para poner items en
+fila */
+flex-direction: row; /* Los items van de izquierda a derecha
+*/
+justify-content: flex-start; /* ALINEA a la IZQUIERDA (inicio del eje)
+*/
+padding: 0 20px; /* Espacio izquierdo de 20px */
+margin: 0; /* Sin márgenes externos */
+gap: 0; /* Sin espacio extra entre items */
+}
+.menu-navegacion ul li a {
+display: block; /* El enlace ocupa todo el área del li */
+color: #ffffff; /* Texto blanco */
+text-decoration: none; /* Elimina el subrayado del enlace */
+padding: 16px 24px; /* Área clicable generosa */
+font-size: 0.95em; /* Texto ligeramente más pequeño */
+font-weight: 500; /* Peso medio */
+transition: background-color 0.3s ease; /* Animación suave al hover */
+}
+/* Efecto al pasar el mouse por encima del enlace */
+.menu-navegacion ul li a:hover {
+background-color: #3949ab; /* Fondo más claro al hacer hover */
+color: #e8eaf6; /* Texto ligeramente diferente */
+}
+/* ================================================= */
+/* CONTENIDO PRINCIPAL */
+/* ================================================= */
+.contenido {
+max-width: 1100px; /* Máximo ancho para no estirarse */
+margin: 40px auto; /* Centra horizontalmente con auto */
+padding: 40px; /* Relleno interior */
+background-image:url(OIP.webp); /* Fondo blanco */
+border-radius: 12px; /* Esquinas redondeadas */
+box-shadow: 0 2px 16px rgba(0,0,0,0.08); /* Sombra suave */
+}
+/* ================================================= */
+/* PIE DE PÁGINA — centrado con redes sociales */
+/* ================================================= */
+.pie-pagina {
+background-color: #96ccfc; /* Fondo muy oscuro */
+color: #ffffff; /* Texto blanco */
+text-align: center; /* Centra todo el contenido */
+padding: 50px 20px; /* Relleno generoso */
+margin-top: 40px; /* Espacio arriba del footer */
+}
+.texto-footer {
+font-size: 1em;
+color: #ffffff; /* Gris claro */
+margin-bottom: 30px;
+}
+/* Contenedor de las redes sociales */
+.redes-sociales {
+display: flex; /* Flexbox para alinear en fila */
+justify-content: center; /* CENTRADO horizontalmente */
+align-items: center; /* Centrado verticalmente */
+gap: 40px; /* Espacio entre cada red social */
+margin-bottom: 30px;
+flex-wrap: wrap; /* En pantallas pequeñas, bajan de línea
+*/
+}
+/* Cada grupo icono + nombre */
+.red-social {
+display: flex;
+flex-direction: column; /* Icono arriba, nombre abajo */
+align-items: center; /* Centra dentro de cada columna */
+gap: 8px;
+}
+.red-social span {
+font-size: 0.85em; /* Nombre más pequeño */
+color: #ffffff; /* Color gris */
+letter-spacing: 1px;
+text-transform: uppercase; /* NOMBRE EN MAYÚSCULAS */
+}
+
+/* Estilo base de todos los iconos */
+.redes-sociales a {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 56px; /* Ancho del círculo */
+height: 56px; /* Alto del círculo */
+border-radius: 50%; /* 50% = círculo perfecto */
+font-size: 1.4em; /* Tamaño del icono */
+text-decoration: none;
+color: #ffffff; /* Icono blanco */
+transition: transform 0.3s ease, opacity 0.3s ease; /* Animación */
+}
+/* Efecto hover en todos los iconos */
+.redes-sociales a:hover {
+transform: translateY(-5px); /* Sube 5px al pasar el mouse */
+opacity: 0.85; /* Ligeramente transparente */
+}
+/* Color específico de cada red social */
+.icono-facebook { background-color: #1877F2; } /* Azul Facebook */
+.icono-instagram { background-color: #E1306C; } /* Rosa Instagram */
+.icono-youtube { background-color: #FF0000; } /* Rojo YouTube */
+.copyright {
+font-size: 0.8em;
+color: #f8f8f8;
+margin-top: 10px;
+}
